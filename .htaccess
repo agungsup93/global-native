@@ -1,6 +1,11 @@
 <IfModule mod_rewrite.c>
 RewriteEngine on
 
+ErrorDocument 404 http://localhost/global-coba/
+ErrorDocument 403 http://localhost/global-coba/
+ErrorDocument 500 http://localhost/global-coba/
+
+
 RewriteCond %{REQUEST_FILENAME} !-d
 RewriteCond %{REQUEST_FILENAME}.php -f
 RewriteRule ^(.*)$ $1.php
@@ -40,5 +45,14 @@ RewriteCond %{QUERY_STRING} union([^a]*a)+ll([^s]*s)+elect [NC,OR]
 RewriteCond %{QUERY_STRING} (;|<|>|'|"|\)|%0A|%0D|%22|%27|%3C|%3E|%00).*(/\*|union|select|insert|drop|delete|update|cast|create|char|convert|alter|declare|order|script|set|md5|benchmark|encode) [NC,OR]
 RewriteCond %{QUERY_STRING} (sp_executesql) [NC]
 RewriteRule ^(.*)$ - [F,L]
+
+#clean URL
+RewriteRule ^artikel$ index.php?kategori=artikel [L]
+RewriteRule ^artikel/([a-zA-Z0-9]+)$ index.php?kategori=artikel&judul=$1 [L]
+
+
+
+
+Options All -Indexes
 
 </IfModule>

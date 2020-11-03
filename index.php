@@ -26,7 +26,7 @@
         <div class="collapse navbar-collapse" id="primaryNav">
             <ul class="navbar-nav ml-auto">
                 <li class="nav-item">
-                    <a class="nav-link" href="#"><?php include "function/controller_waktu.php";?></a>
+                    <a class="nav-link" href="#"><?php include "function/time/controller_waktu.php";?></a>
                 </li>
             </ul>
         </div>
@@ -39,7 +39,7 @@
         <div class="row">
            
             <div class="col-sm-6 col-md-6">
-                <a href="#">
+                <a href="sales/login">
                     <div class="hk-services-box text-center">
                         <i class="fas fa-folder-open"></i>
                         <h3>Sales</h3>

@@ -8,14 +8,14 @@
 
 </div>
 
-<script src="assets/plugins/jquery/jquery.min.js"></script>
-<script src="assets/plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
-<script src="assets/plugins/datatables/jquery.dataTables.min.js"></script>
-<script src="assets/plugins/datatables-bs4/js/dataTables.bootstrap4.min.js"></script>
-<script src="assets/plugins/datatables-responsive/js/dataTables.responsive.min.js"></script>
-<script src="assets/plugins/datatables-responsive/js/responsive.bootstrap4.min.js"></script>
-<script src="assets/dist/js/adminlte.min.js"></script>
-<script src="assets/dist/js/demo.js"></script>
+<script src="../assets/plugins/jquery/jquery.min.js"></script>
+<script src="../assets/plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
+<script src="../assets/plugins/datatables/jquery.dataTables.min.js"></script>
+<script src="../assets/plugins/datatables-bs4/js/dataTables.bootstrap4.min.js"></script>
+<script src="../assets/plugins/datatables-responsive/js/dataTables.responsive.min.js"></script>
+<script src="../assets/plugins/datatables-responsive/js/responsive.bootstrap4.min.js"></script>
+<script src="../assets/dist/js/adminlte.min.js"></script>
+<script src="../assets/dist/js/demo.js"></script>
 <script>
   $(function () {
     $("#example1").DataTable({
@@ -33,8 +33,8 @@
     });
   });
 </script>
-<script src="assets/plugin/jquery/jquery.min.js"></script>
-    <script src="assets/pluin/jquery/savy.min.js"></script>
+<script src="../assets/plugin/jquery/jquery.min.js"></script>
+<script src="../assets/pluin/jquery/savy.min.js"></script>
 	<script>
 		$(document).ready(function(){
 			$('.auto-save').savy('load');
