@@ -1,10 +1,6 @@
 <?php
 session_start();
-$koneksi = mysqli_connect("localhost", "root", "", "gni_projectsales");
-if (mysqli_connect_errno()) {
-	echo "Koneksi Gagal : " . mysqli_connect_error();
-}
-
+require_once"../../core/db.php";
 $email 		= mysqli_real_escape_string($koneksi, $_POST['email']);
 $password 	= md5(mysqli_real_escape_string($koneksi, $_POST['password']));
 $captcha	= mysqli_real_escape_string($koneksi, $_POST['captcha']);
